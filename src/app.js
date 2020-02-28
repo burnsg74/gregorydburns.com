@@ -1,1 +1,2 @@
-require('./favicon.ico')
+import "./favicon.ico";
+import "./site.css";
