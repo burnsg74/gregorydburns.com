@@ -23,7 +23,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|svg|jpg|gif|ico)$/,
+                test: /\.(png|svg|jpeg|jpg|gif|ico)$/,
                 use: [
                     'file-loader',
                 ],
@@ -31,6 +31,9 @@ module.exports = {
         ]
     },
     devServer: {
+        host: '0.0.0.0',
+        port: 8080,
+        disableHostCheck: true,
         contentBase: './dist',
         overlay: true,
         hot: true
